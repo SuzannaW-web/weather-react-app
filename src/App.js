@@ -3,6 +3,7 @@ import "./styles.css";
 import React, { useState } from "react";
 import Search from "./Search";
 import Weather from "./Weather";
+import Footer from "./Footer";
 
 export default function App() {
   const [city, setCity] = useState("");
@@ -13,9 +14,10 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Weather App</h1>
+      <h1>Suzanna's React Weather App</h1>
       <Search onSearch={handleSearch} />
       {city && <Weather city={city} />}
+      <Footer />
     </div>
   );
 }

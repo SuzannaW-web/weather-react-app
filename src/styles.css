@@ -1,4 +1,29 @@
 .App {
-  font-family: sans-serif;
   text-align: center;
+  font-family: sans-serif;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #e0e6f2;
+  border-radius: 12px;
+  border: 2px solid #7da8d8;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.search-input {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 2px solid #ffd97d;
+  margin: 5px;
+}
+.search-button {
+  padding: 10px 16px;
+  margin: 5px;
+  background: #7da8d8;
+
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
 }
