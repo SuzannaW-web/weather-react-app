@@ -1,0 +1,26 @@
+import "./styles.css";
+import React, { useState } from "react";
+
+export default function Search({ onSearch }) {
+  const [query, setQuery] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    if (query.trim().length > 0) {
+      onSearch(query);
+    } else {
+      alert("Enter a city");
+    }
+  }
+
+  function updateQuery(event) {
+    setQuery(event.target.value);
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input type="search" placeholder="Type a city" onChange={updateQuery} />
+      <input type="submit" value="Search" />
+    </form>
+  );
+}
