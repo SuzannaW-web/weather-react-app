@@ -34,6 +34,7 @@ export default function Weather() {
 
   return (
     <div className="Weather">
+      <h1>My React Weather App</h1>
       {/* Search Form */}
       <form onSubmit={handleSubmit}>
         <div className="row">
@@ -41,12 +42,16 @@ export default function Weather() {
             <input
               type="search"
               placeholder="Type a city"
-              className="search-input"
+              className="form-control"
               onChange={updateQuery}
             />
           </div>
           <div className="col-3">
-            <input type="submit" value="Search" className="search-button" />
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary w-100"
+            />
           </div>
         </div>
       </form>
@@ -60,17 +65,21 @@ export default function Weather() {
             {weather.city}, {weather.country}
           </h2>
           <div className="row">
-            <div className="col-5">
+            <div className="col-3">
               <img
                 src={weather.condition.icon_url}
                 alt={weather.condition.description}
-              />
+              />{" "}
             </div>
-            <div className="col-7">
+            <div className="col-3">
+              <span className="temperature">
+                {Math.round(weather.temperature.current)}
+              </span>
+              <span className="unit">°C</span>
+            </div>
+            <div className="col-6">
               <ul>
-                <li>
-                  Temperature: {Math.round(weather.temperature.current)}°C
-                </li>
+                <li></li>
                 <li>Description: {weather.condition.description}</li>
                 <li>Humidity: {weather.temperature.humidity}%</li>
                 <li>Wind: {weather.wind.speed} km/h</li>

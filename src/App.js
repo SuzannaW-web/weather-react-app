@@ -8,7 +8,6 @@ export default function App() {
   return (
     <div className="App">
       <div className="Container">
-        <h1>Suzanna's React Weather App</h1>
         <Weather />
       </div>
       <Footer />
