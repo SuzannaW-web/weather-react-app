@@ -1,0 +1,16 @@
+.Weather li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.Weather h2 {
+  padding-top: 1em;
+}
+
+.Weather {
+  background-color: rgb(237, 234, 223);
+  border: 5px solid rgb(197, 195, 156);
+  border-radius: 30px;
+  min-height: 400px;
+  padding: 20px;
+}
