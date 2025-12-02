@@ -43,20 +43,32 @@ export default function Weather(props) {
           <li>{weatherData.date}</li>
           <h1>{weatherData.city}</h1>
         </ul>
-        <img src={weatherData.icon} alt={weatherData.description} />
-        <ul>
-          <li>
-            {" "}
-            <span className="temperature">
-              {Math.round(weatherData.temperature)}
-            </span>
-            <span className="unit">°C</span>
-          </li>
-          <li className="text-capitalize">{weatherData.description}</li>
 
-          <li>Humidity: {weatherData.humidity}%</li>
-          <li>Wind: {weatherData.wind} km/h</li>
-        </ul>
+        <div class="row">
+          <div class="col-auto mx-auto  ">
+            <div className="row align-items-center text-center">
+              <div className="col-auto">
+                {" "}
+                <span className="temperature">
+                  {Math.round(weatherData.temperature)}
+                </span>
+                <span className="unit">°C</span>
+              </div>
+              <div className="col-auto ">
+                <img
+                  src={weatherData.icon}
+                  alt={weatherData.description}
+                  className="weather-icon"
+                />
+                <li className="text-capitalize">{weatherData.description}</li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row conditions">
+          <div className="col-6 ">Humidity: {weatherData.humidity}%</div>
+          <div className="col-6 ">Wind: {weatherData.wind} km/h</div>
+        </div>
       </div>
     );
   } else {
