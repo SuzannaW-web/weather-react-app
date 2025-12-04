@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+}
+
+body {
+  background-color: #e3f2fd;
 }
 
 .App .Footer {

@@ -1,9 +1,9 @@
 .Weather {
-  max-width: 450px;
+  max-width: 800px;
   min-height: 300px;
-  background-color: #e3f2fd;
-  border: 2px solid #d7dee7;
-  border-radius: 30px;
+  background-color: #fff;
+
+  border-radius: 20px;
   padding: 20px;
 
   font-family: sans-serif;
@@ -11,14 +11,12 @@
 }
 
 .Weather h1 {
-  text-align: center;
   font-weight: bold;
   color: #2b2d42;
 }
 
 .Weather li {
   list-style-type: none;
-  text-align: center;
 }
 
 .Weather .Footer {
@@ -34,6 +32,13 @@
   margin-bottom: 20px;
 }
 
+.Weather .btn {
+  background-color: #679dc0;
+}
+.Weather .form-control {
+  background-color: #f6f7f7;
+}
+
 .Weather .temperature {
   font-size: 120px;
 }
@@ -43,10 +48,6 @@
 }
 
 .weather-icon {
-  width: 100px;
-  height: 100px;
-}
-
-.weather .row.conditions {
-  border: 1px solid red;
+  width: 150px;
+  height: 150px;
 }
