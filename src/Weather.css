@@ -1,22 +1,25 @@
 .Weather {
   max-width: 800px;
-  min-height: 300px;
-  background-color: #fff;
-
+  min-height: 400px;
+  background-color: #e7f2e9;
   border-radius: 20px;
-  padding: 20px;
-
+  padding: 40px;
   font-family: sans-serif;
-  margin: 20px auto;
+  margin: 50px auto;
+  color: #333333;
+  font-family: "Poppins", sans-serif;
 }
 
 .Weather h1 {
-  font-weight: bold;
-  color: #2b2d42;
+  font-weight: 700;
+  color: #2e4d2b;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 1em;
 }
 
 .Weather li {
   list-style-type: none;
+  font-family: "Poppins", sans-serif;
 }
 
 .Weather .Footer {
@@ -32,22 +35,58 @@
   margin-bottom: 20px;
 }
 
-.Weather .btn {
-  background-color: #679dc0;
-}
 .Weather .form-control {
   background-color: #f6f7f7;
 }
 
 .Weather .temperature {
-  font-size: 120px;
+  font-size: 100px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #2e4d2b;
 }
 
 .Weather .unit {
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  position: relative;
+  line-height: 1;
+  top: -54px;
 }
 
-.weather-icon {
-  width: 150px;
-  height: 150px;
+.weather-card {
+  padding: 20px;
+  border-radius: 10px;
+  height: 200px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.weather-card a {
+  text-decoration: none;
+}
+
+.Weather .btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.Weather .btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
 }
