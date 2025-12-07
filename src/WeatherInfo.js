@@ -12,9 +12,7 @@ export default function WeatherInfo(props) {
         <h1>{props.data.city}</h1>
       </div>
 
-      {/* Three columns */}
-      <div className="row weather-cards">
-        {/* Card 1: details */}
+      <div className="row g-4 weather-cards">
         <div className="col-12 col-md-4">
           <div className="weather-card details-card">
             <ul>
@@ -25,14 +23,12 @@ export default function WeatherInfo(props) {
           </div>
         </div>
 
-        {/* Card 2: temperature */}
         <div className="col-12 col-md-4">
           <div className="weather-card temp-card text-center">
             <WeatherTemperature celsius={props.data.temperature} />
           </div>
         </div>
 
-        {/* Card 3: icon */}
         <div className="col-12 col-md-4">
           <div className="weather-card icon-card text-center">
             <WeatherIcon code={props.data.icon} />
