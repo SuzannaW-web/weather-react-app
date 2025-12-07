@@ -20,15 +20,16 @@ export default function Search({ onSearch }) {
   return (
     <form onSubmit={handleSubmit}>
       <div className="row">
-        <div className="col-9">
+        <div className="col-sm-9 col-12">
           <input
             type="search"
             placeholder="Type a city"
             className="search-input"
             onChange={updateQuery}
           />
+          ss
         </div>
-        <div className="col-3">
+        <div className="col-sm-3 col-12">
           <input type="submit" value="Search" className="search-button" />
         </div>{" "}
       </div>

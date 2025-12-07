@@ -1,5 +1,11 @@
 .WeatherForecast {
   text-align: center;
+  margin-top: 2em;
+  border-top: solid 2px #53629e1b;
+}
+
+.WeatherForecast .row {
+  margin-top: 30px;
 }
 
 .WeatherForecast h2 {
@@ -10,4 +16,13 @@
 .WeatherForecast-temperature-min {
   opacity: 0.6;
   margin-left: 5px;
+}
+
+.WeatherForecast .col {
+  background-color: #d9c4b036;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
